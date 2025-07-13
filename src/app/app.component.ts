@@ -5,11 +5,10 @@ import {MessagesComponent} from "./messages/messages.component";
 
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, RouterLink, HeroesComponent, MessagesComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+    selector: 'app-root',
+    imports: [RouterOutlet, RouterLink, HeroesComponent, MessagesComponent],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'Tour of Heroes';

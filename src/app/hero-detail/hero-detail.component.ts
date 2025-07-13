@@ -8,11 +8,10 @@ import { HeroService } from '../hero.service';
 import { Hero } from '../hero';
 
 @Component({
-  selector: 'app-hero-detail',
-  standalone: true,
-  imports: [CommonModule, RouterLink, FormsModule],
-  templateUrl: './hero-detail.component.html',
-  styleUrls: ['./hero-detail.component.css']
+    selector: 'app-hero-detail',
+    imports: [CommonModule, RouterLink, FormsModule],
+    templateUrl: './hero-detail.component.html',
+    styleUrls: ['./hero-detail.component.css']
 })
 export class HeroDetailComponent implements OnInit {
   @Input() hero?: Hero;

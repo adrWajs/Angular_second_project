@@ -6,11 +6,10 @@ import { HeroDetailComponent } from '../hero-detail/hero-detail.component';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-heroes',
-  imports: [CommonModule, HeroDetailComponent],
-  templateUrl: './heroes.component.html',
-  standalone: true,
-  styleUrls: ['./heroes.component.css']
+    selector: 'app-heroes',
+    imports: [CommonModule, HeroDetailComponent],
+    templateUrl: './heroes.component.html',
+    styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent implements OnInit {
 
