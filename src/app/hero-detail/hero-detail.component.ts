@@ -9,6 +9,7 @@ import { Hero } from '../hero';
 
 @Component({
     selector: 'app-hero-detail',
+    standalone: true,
     imports: [CommonModule, RouterLink, FormsModule],
     templateUrl: './hero-detail.component.html',
     styleUrls: ['./hero-detail.component.css']
@@ -26,4 +27,11 @@ export class HeroDetailComponent implements OnInit {
     this.heroService.getHero(id).subscribe(h => this.hero = h);
   }
   goBack(): void { this.location.back(); }
+
+  save(): void {
+    if (this.hero) {
+      this.heroService.updateHero(this.hero)
+        .subscribe(() => this.goBack());
+    }
+  }
 }
